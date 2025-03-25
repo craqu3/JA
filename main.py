@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify
 import mysql.connector
 import bcrypt
+import datetime
 
 app = Flask(__name__)
 
@@ -9,7 +10,7 @@ def get_db_connection():
     return mysql.connector.connect(
         host="localhost",
         user="root",
-        password="",
+        password="jasolvex25",
         database="solvex"
     )
 
