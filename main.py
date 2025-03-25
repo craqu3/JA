@@ -1,7 +1,8 @@
+import time
+from datetime import date
 from flask import Flask, request, jsonify
 import mysql.connector
 import bcrypt
-import datetime
 
 app = Flask(__name__)
 
@@ -19,11 +20,13 @@ def get_db_connection():
 def register():
     data = request.get_json()
 
+    
     email = request.form.get("email")
     password = request.form.get("password")
-    email = request.form.get("email")
-    email = request.form.get("email")
-    
+    Birth = request.form.get("Birth")
+    firstName = request.form.get("firstName")
+    lastName = request.form.get("lastName")
+    accBirth = date.today()
 
     password_criptografada = bcrypt.hashpw(password.encode("utf-8"), bcrypt.gensalt())
 
@@ -31,7 +34,7 @@ def register():
     cursor = conn.cursor()
 
     try:
-        cursor.execute("INSERT INTO users (email, password) VALUES (%s, %s)", (email, password_criptografada))
+        cursor.execute("INSERT INTO users (email, password, firstName, lastName, Birth, accBirth) VALUES (%s, %s, %s, %s, %s, %s)", (email, password_criptografada, firstName, lastName, Birth, accBirth))
         conn.commit()
         return jsonify({"message": "Usuário registrado com sucesso!"}), 201
     except mysql.connector.errors.IntegrityError:
@@ -73,4 +76,3 @@ def create_user():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080, debug = True)
-
