@@ -1,7 +1,7 @@
-var password = window.document.getElementById('password')
-var verPassword = window.document.getElementById('verpassword')
+let password = window.document.getElementById('password')
+let verPassword = window.document.getElementById('verpassword')
 
 if (verPassword != password){
-    window.alert('As passwords não coincidem')
+    alert('As passwords não coincidem')
 }
 

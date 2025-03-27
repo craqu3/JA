@@ -1,6 +1,6 @@
 
 body {
-    background-color: rgb(36, 36, 36);
+    background: linear-gradient(to bottom, rgba(52, 52, 56, 2.7), rgba(20, 20, 25, 2.9));
     margin: 0;
 }
 
@@ -39,7 +39,17 @@ p {
     text-indent: 10px;
 }
 
-input#username {
+
+
+input#firstName {
+    border-radius: 5px;
+    padding-left: 20px;
+    height: 20px;
+    border-color: transparent;
+    box-shadow: #E1AD01 1px 1px 20px;
+}
+
+input#lastName {
     margin-top: 50px;
     border-radius: 20px;
     padding-left: 10px;
@@ -75,24 +85,51 @@ input#birth {
     box-shadow: #E1AD01 1px 1px 20px;
 }
 
+input#verpassword {
+    margin-top: 50px;
+    border-radius: 20px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    border-color: transparent;
+    box-shadow: #E1AD01 1px 1px 20px;
+}
+
 input {
     text-align: center;
     display: flex;
 }
 
-
-main {
-    background-color: rgba(52, 52, 56, 0.788);
+main#primário {
+    background-color: rgb(52, 52, 56);
     color: #FFC107;
     padding: 20px;
-    margin: auto;
+    margin-left: 50%;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
-    background: linear-gradient(to bottom, rgba(52, 52, 56, 0.95), rgba(125, 125, 60, 0.6), rgba(244, 208, 63, 0.6));
+    /*background: linear-gradient(to bottom, rgba(52, 52, 56, 0.95), rgba(125, 125, 60, 0.6), rgba(244, 208, 63, 0.6));*/
     box-shadow: 0px 0px 20px rgba(241, 196, 15, 0.6);
-    width: 50%;
+    width: 20%;
     height: 560px;
     border-radius: 10px;
+    z-index: 1;
+}
+
+
+main#secundário {
+    position: absolute;
+    background-color: rgba(52, 52, 56, 0.527);
+    color: #e2ca80;
+    padding: 20px;
+    margin-left: 30%;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    /*background: linear-gradient(to bottom, rgba(52, 52, 56, 0.95), rgba(125, 125, 60, 0.6), rgba(244, 208, 63, 0.6));*/
+    border-right-color: transparent;
+    width: 20%;
+    height: 560px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(241, 196, 15, 0.274);
+    z-index: -1;
 }
 
 h1.titulo {
@@ -121,7 +158,7 @@ main div {
     color: darkgreen;
     text-decoration: none;
     position: relative;
-    top: 350px;
+    top: 30px;
 }
 
 .fim:hover {
