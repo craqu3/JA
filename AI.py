@@ -8,10 +8,12 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import tensorflow as tf
+import cv2 as cv
 from tensorflow.keras.models import load_model
 from tensorflow.keras.datasets import cifar10
 from tensorflow.keras.utils import to_categorical
 from tensorflow.keras.preprocessing import image
+
 
 # Definir as 10 classes do CIFAR-10
 labels = ['Airplane', 'Automobile', 'Bird', 'Cat', 'Deer', 'Dog', 'Frog', 'Horse', 'Ship', 'Truck']
