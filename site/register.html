@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-register.css">
     <title>Solvex - Registro</title>
 </head>
 <body> 
         <nav>
-            <button class="Logo"type="button">Logo</button>
+            <button title="Home" class="Logo"type="button">Logo</button>
             <button class="Sobre nós"type="button"><i class="fa fa-home"></i>Sobre nós</button>
             <button class="Parcerias"type="button">Parcerias</button>
             <button class="Contactos"type="button">Contactos</button>
@@ -17,28 +17,21 @@
         <main id="secundário">
             <h1 class="titulo"></h1>
             <div>
-                <form action="/register" method="POST">
-                    <input type="text" id="firstName" name="firstName" placeholder="Primeiro Nome" required>
-                    <input type="text" id="lastName" name="lastName" placeholder="Último Nome" required>
-                    <input type="email" id="email" name="email" placeholder="Email" required>
-                    <input type="password" id="password" name="password" placeholder="Password" required>
-                    <input type="password" id="verpassword" name="verpassword" placeholder="Confirmar Password" required>
-                    <input type="date" id="birth" name="birth" placeholder="Data de nascimento" required>
-                    <button type="submit">Registar</button>
-                </form>   
+                <h1 id="registo-titulo">Solvex ...</h1>
             </div>
         </main>
         <main id="primário">
             <h1 class="titulo">Criar Conta</h1>
-            <div>
+            <div id="foms">
                 <form action="/register" method="POST">
-                    <input type="text" id="firstName" name="firstName" placeholder="Primeiro Nome" required>
+                    <input type="text" id="firstName" name="firstName"  required>
+                    <label for="firstName">Primeiro Nome</label>
                     <input type="text" id="lastName" name="lastName" placeholder="Último Nome" required>
+                    <input type="date" id="birth" name="birth" placeholder="Data de nascimento" required>
                     <input type="email" id="email" name="email" placeholder="Email" required>
                     <input type="password" id="password" name="password" placeholder="Password" required>
                     <input type="password" id="verpassword" name="verpassword" placeholder="Confirmar Password" required>
-                    <input type="date" id="birth" name="birth" placeholder="Data de nascimento" required>
-                    <button type="submit">Registar</button>
+                    <button type="submit" id="submit">Registar</button>
                 </form>   
             </div>
         </main>
