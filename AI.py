@@ -1,6 +1,5 @@
-
 """
-    Programador....: (C) 2025 . Ricardo Pires
+    Programador....: (C) craqu3
     Data...........: 26/03/2025
     Observações....: Carregar o modelo treinado e testar imagens com classificação.
 """

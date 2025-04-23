@@ -12,9 +12,8 @@ nav {
     padding: 20px;
     position: sticky;
     top: 0;
-    background: linear-gradient(to top, rgba(52, 52, 56, 2.7), rgba(20, 20, 25, 2.9));
+    background: linear-gradient(to top, rgba(52, 52, 56, 0.7), rgba(20, 20, 25, 0.9));
     margin-bottom: 10%;
-    
 }
 
 button {
@@ -33,8 +32,16 @@ button.logo {
 }
 
 button.Login {
+    color: #FFB300;
+    text-shadow: #FFB300 1px 1px 6px;
+    box-shadow: 0px 2px 0px 0px;
     margin-left: auto;
 }
+
+button:hover {
+    color: #FFB300;
+}
+
 
 p {
     text-indent: 10px;
@@ -92,25 +99,25 @@ input {
 }
 
 input#birth:valid + label#birth {
-    color: #e1ad01af !important;
+    color: #e1ad01af ;
     background-color: rgb(255, 255, 255);
 }
 
 input#birth:focus + label#birth {
-    color: #E1AD01 !important;
+    color: #E1AD01 ;
     background-color: rgb(255, 255, 255);
 }
 
 
 input:not(#birth):valid + label {
     transform: translateY(-22px);
-    color: #be950c !important;
+    color: #be950c ;
     background-color: rgb(255, 255, 255);
 }
 
 input:is(#email):not(:placeholder-shown):not(:focus) + label {
     transform: translateY(-22px);
-    color: #E1AD01 !important;
+    color: #E1AD01 ;
     background-color: white;
     z-index: 2;
 }
@@ -120,20 +127,20 @@ input:is(#email):not(:placeholder-shown):not(:focus) + label {
 
 input:not(#birth):focus + label {
     transform: translateY(-22px);
-    color: #E1AD01 !important;
+    color: #E1AD01 ;
     background-color: rgb(255, 255, 255);
 }
 
 
 
 input:valid {
-    border-color: #E1AD01 !important;
+    border-color: #E1AD01 ;
 }
 
 
 input:focus {
     outline: none;
-    border-color: #E1AD01 !important;
+    border-color: #E1AD01 ;
 }
 
 input#firstName {
@@ -191,6 +198,7 @@ button#submit:hover {
 }
 
 main#primário {
+    margin: auto;
     background-color: rgb(255, 255, 255);
     color: #FFB300;
     padding: 1%;
@@ -199,7 +207,7 @@ main#primário {
     font-family: 'Poppins', sans-serif;
     /*background: linear-gradient(to bottom, rgba(52, 52, 56, 0.95), rgba(125, 125, 60, 0.6), rgba(244, 208, 63, 0.6));*/
     box-shadow: 0px 0px 20px rgba(241, 196, 15, 0.6);
-    width: 30%;
+    width: 520px;
     height: 560px;
     border-radius: 10px;
     z-index: 1;
@@ -242,12 +250,6 @@ main div {
 
 }
 
-.endbar {
-    text-align: justify;
-    color: aqua;
-    margin-bottom: auto;
-    padding: 20px;
-}
 
 .fim {
     color: rgb(255, 255, 255);
